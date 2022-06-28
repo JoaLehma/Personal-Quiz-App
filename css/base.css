@@ -1,5 +1,15 @@
+#html {
+  font-size: 62.5%;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --primary-color: teal;
+  --primary-contrast-color: white;
+  --border-radius: 2rem;
 }
