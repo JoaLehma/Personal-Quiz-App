@@ -1,0 +1,14 @@
+.header_area {
+  width: 100vw;
+  height: 5vh;
+  background-color: var(--primary-color);
+  color: var(--primary-contrast-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-shadow: 0 0 10px yellow;
+  font-size: 2rem;
+}
