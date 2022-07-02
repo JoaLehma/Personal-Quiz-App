@@ -1,5 +1,4 @@
 fieldset {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 20px;
 }
