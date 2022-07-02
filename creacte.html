@@ -4,20 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Personal-Quiz-App</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
 
   <body>
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="/index.html">Main</a></li>
-          <li><a href="/bookmarks.html">Bookmarks</a></li>
-          <li><a href="/creacte.html">Create</a></li>
-          <li><a href="/profile.html">Profile</a></li>
+    <header>
+      <article class="header-area">
+        <h1>Create</h1>
+      </article>
+    </header>
+    <main>
+      <form id="create_quizcard">
+        <fieldset>
+          <legend>Neue Quiz-Card erstellen:</legend>
+          <label for="question"
+            >Neue Frage erstellen
+            <textarea
+              placeholder="Add question"
+              name="question"
+              id="question"
+              cols="100"
+              rows="10"
+            ></textarea>
+          </label>
+          <label for="answer"
+            >Antwort hinzufügen:
+            <textarea
+              placeholder="Add answer"
+              name="answer"
+              id="answer"
+              cols="100"
+              rows="10"
+            ></textarea>
+          </label>
+          <label for="Senden">
+            <input id="Senden" type="submit" name="senden" value="Senden" />
+          </label>
+        </fieldset>
+      </form>
+    </main>
+    <nav>
+      <article class="nav-area">
+        <ul class="nav__list">
+          <li class="nav__list__item"><a href="/index.html">Home</a></li>
+          <li class="nav__list__item">
+            <a href="/bookmarks.html">Bookmarks</a>
+          </li>
+          <li class="nav__list__item"><a href="/creacte.html">Create</a></li>
+          <li class="nav__list__item"><a href="/profile.html">Profile</a></li>
         </ul>
-      </nav>
-    </footer>
+      </article>
+    </nav>
   </body>
 </html>
