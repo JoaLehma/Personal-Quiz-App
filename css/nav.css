@@ -1,6 +1,7 @@
 .nav__list {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
+  position: fixed;
   list-style-type: none;
   font-size: 1.2rem;
   align-items: stretch;
@@ -8,6 +9,7 @@
   grid-template-columns: repeat(4, 25vw);
   grid-template-rows: 7vh;
   column-gap: 5px;
+  z-index: 10;
 }
 
 .nav__list__item {
@@ -16,4 +18,8 @@
   justify-content: center;
   align-items: center;
   color: var(--primary-contrast-color);
+}
+
+.background_nav {
+  background-color: red;
 }
