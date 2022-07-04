@@ -2,24 +2,12 @@
   position: absolute;
   bottom: 0;
   position: fixed;
-  list-style-type: none;
   font-size: 1.2rem;
-  align-items: stretch;
-  display: grid;
-  grid-template-columns: repeat(4, 25vw);
-  grid-template-rows: 7vh;
-  column-gap: 5px;
-  z-index: 10;
-}
-
-.nav__list__item {
-  background-color: var(--primary-color);
   display: flex;
-  justify-content: center;
+  width: 100vw;
+  height: 12vw;
+  background-color: var(--primary-color);
+  justify-content: space-around;
+  border-top: solid 2px var(--primary-contrast-color);
   align-items: center;
-  color: var(--primary-contrast-color);
-}
-
-.background_nav {
-  background-color: red;
 }

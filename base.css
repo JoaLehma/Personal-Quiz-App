@@ -13,3 +13,11 @@
   --primary-color: teal;
   --primary-contrast-color: white;
 }
+
+main {
+  margin-bottom: 10rem;
+}
+
+li {
+  list-style: none;
+}

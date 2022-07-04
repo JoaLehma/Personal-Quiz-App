@@ -24,65 +24,63 @@
       <section class="content-area">
         <article class="question__card">
           <h2 class="question__headline">Question:</h2>
-          <img
-            class="bookmark"
-            src="/images/icons8-lesezeichen-24.svg"
-            alt="Bookmark Icon"
-          />
+          <button type="button" class="bookmark__button">
+            <svg
+              fill="#000"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              width="45px"
+              height="45px"
+            >
+              <path
+                d="M 4.5 2 C 3.675781 2 3 2.675781 3 3.5 L 3 14.484375 L 8 10.820313 L 13 14.484375 L 13 3.5 C 13 2.675781 12.324219 2 11.5 2 Z M 4.5 3 L 11.5 3 C 11.78125 3 12 3.21875 12 3.5 L 12 12.515625 L 8 9.578125 L 4 12.515625 L 4 3.5 C 4 3.21875 4.21875 3 4.5 3 Z"
+              />
+            </svg>
+          </button>
           <p class="question__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Necessitatibus esse totam quo at molestias eius cum? Tenetur fugit
             id laboriosam adipisci corporis eveniet. Cupiditate architecto fuga
             unde delectus earum ex.
           </p>
-          <button class="answer__button" type="button">Show Answer</button>
-        </article>
-        <article class="question__card">
-          <h2 class="question__headline">Question:</h2>
-          <img
-            class="bookmark"
-            src="/images/icons8-lesezeichen-24.svg"
-            alt="Bookmark Icon"
-          />
-          <p class="question__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus esse totam quo at molestias eius cum? Tenetur fugit
-            id laboriosam adipisci corporis eveniet. Cupiditate architecto fuga
-            unde delectus earum ex.
+          <button class="answer__button" data-js="button" type="button">
+            Show Answer
+          </button>
+          <p class="answer__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+            omnis, in doloremque officia repudiandae ipsa laboriosam explicabo,
+            velit commodi recusandae possimus eos tenetur accusamus sint, unde
+            incidunt expedita repellat eius!
           </p>
-          <button class="answer__button" type="button">Show Answer</button>
-        </article>
-        <article class="question__card">
-          <h2 class="question__headline">Question:</h2>
-          <img
-            class="bookmark"
-            src="/images/icons8-lesezeichen-24.svg"
-            alt="Bookmark Icon"
-          />
-          <p class="question__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus esse totam quo at molestias eius cum? Tenetur fugit
-            id laboriosam adipisci corporis eveniet. Cupiditate architecto fuga
-            unde delectus earum ex.
-          </p>
-          <button class="answer__button" type="button">Show Answer</button>
+          <ul class="tags__liste">
+            <li>
+              <button type="button" class="tags__button">Button 1</button>
+            </li>
+            <li>
+              <button type="button" class="tags__button">Button 2</button>
+            </li>
+            <li>
+              <button type="button" class="tags__button">Button 3</button>
+            </li>
+            <li>
+              <button type="button" class="tags__button">Button 4</button>
+            </li>
+          </ul>
         </article>
       </section>
     </main>
     <nav>
-      <div class="background_nav">
-        <article class="nav-area">
-          <ul class="nav__list">
-            <li class="nav__list__item"><a href="/index.html">Home</a></li>
-            <li class="nav__list__item">
-              <a href="/bookmarks.html">Bookmarks</a>
-            </li>
-            <li class="nav__list__item"><a href="/creacte.html">Create</a></li>
-            <li class="nav__list__item"><a href="/profile.html">Profile</a></li>
-          </ul>
-        </article>
-
+      <article class="nav-area">
+        <ul class="nav__list">
+          <li class="nav__list__item"><a href="/index.html">Home</a></li>
+          <li class="nav__list__item">
+            <a href="/bookmarks.html">Bookmarks</a>
+          </li>
+          <li class="nav__list__item"><a href="/creacte.html">Create</a></li>
+          <li class="nav__list__item"><a href="/profile.html">Profile</a></li>
+        </ul>
+      </article>
     </nav>
-  </div>
+    <script src="./showanswer.js" defer></script>
   </body>
 </html>
