@@ -21,3 +21,7 @@ main {
 li {
   list-style: none;
 }
+
+.hover--effekt:hover {
+  cursor: pointer;
+}
