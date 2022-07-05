@@ -25,6 +25,12 @@
   text-align: center;
 }
 
+.card__answer--visible {
+  text-align: center;
+  margin: 1rem;
+  display: inline-block;
+}
+
 .answer__text {
   text-align: center;
   margin: 1rem;
