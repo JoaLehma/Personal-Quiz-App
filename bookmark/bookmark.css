@@ -1,0 +1,11 @@
+.bookmark__button {
+  background: none;
+  align-self: flex-end;
+  border: none;
+  position: absolute;
+  top: -12px;
+}
+
+.ion_icon--color {
+  color: orangered;
+}

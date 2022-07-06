@@ -1,0 +1,17 @@
+.card__answer--visible {
+  text-align: center;
+  margin: 1rem;
+}
+
+.answer__text {
+  display: none;
+}
+
+.answer__button {
+  width: 7rem;
+  height: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: orange;
+  border-radius: 2rem;
+}
