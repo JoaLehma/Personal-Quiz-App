@@ -5,6 +5,4 @@ export default function Bookmark() {
   function onBookmarkClick() {
     bookmarkColor.classList.toggle("ion_icon--color");
   }
-
-  bookmarkButton.addEventListener("click", onBookmarkClick);
 }

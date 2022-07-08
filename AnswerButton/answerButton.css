@@ -15,3 +15,7 @@
   background-color: orange;
   border-radius: 2rem;
 }
+
+.display__none {
+  display: none;
+}
