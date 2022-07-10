@@ -4,8 +4,9 @@
   border: none;
   position: absolute;
   top: -12px;
+  color: black;
 }
 
-.ion_icon--color {
-  color: orangered;
+.bookmark__button--active {
+  color: red;
 }
