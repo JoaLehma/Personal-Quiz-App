@@ -11,3 +11,7 @@
   border-top: solid 2px var(--primary-contrast-color);
   align-items: center;
 }
+
+ion-icon {
+  font-size: 32px;
+}

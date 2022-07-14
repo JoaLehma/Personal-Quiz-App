@@ -22,7 +22,7 @@ export default function CreateCards() {
 
   const main = document.querySelector('[data-js="main"]');
 
-  questionCards.forEach((card, index) => {
+  questionCards.forEach((card) => {
     /* Container */
     const container = document.createElement("article");
     container.classList.add("question__card");
@@ -45,12 +45,12 @@ export default function CreateCards() {
     /* Title */
     const question = document.createElement("h2");
     question.classList.add("question__headline");
-    question.innerText = questionCards[index].title;
+    question.innerText = card.title;
     container.append(question);
-    /* Frage */
+    /* Question */
     const questionText = document.createElement("p");
     questionText.classList.add("question__text");
-    questionText.innerText = questionCards[index].question;
+    questionText.innerText = card.question;
     container.append(questionText);
     /* Button */
     const button = document.createElement("button");
@@ -67,24 +67,23 @@ export default function CreateCards() {
     });
 
     container.append(button);
-    /* Antwort */
+    /* Answer */
     const answerText = document.createElement("p");
     answerText.classList.add("display__none");
-    answerText.innerText = questionCards[index].answer;
+    answerText.innerText = card.answer;
     answerText.setAttribute("data-js", "answerText");
     container.append(answerText);
 
     /* Tags */
     const tags = document.createElement("ul");
-    tags.classList.add("tags__liste");
+    tags.classList.add("tags__list");
     container.append(tags);
 
-    const list = document.createElement("li");
-    tags.append(list);
-
-    const buttonList = document.createElement("button");
-    buttonList.classList.add("tags__button");
-    list.append(buttonList);
-    buttonList.innerText = questionCards[index].tags[1];
+    card.tags.forEach((tag) => {
+      const newTag = document.createElement("button");
+      newTag.innerText = tag;
+      newTag.classList.add("tags__button");
+      tags.append(newTag);
+    });
   });
 }
